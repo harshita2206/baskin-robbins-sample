@@ -1,0 +1,476 @@
+@font-face {
+    font-family: gilroy;
+    src: url("./Gilroy-SemiBold.ttf");
+}
+@font-face {
+    font-family: gilroyebold;
+    src: url("./Gilroy-ExtraBold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "gilroy";
+    overflow-x: hidden;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+#logo{
+    position: relative;
+    width: 15vw;
+    height: 13vh;
+    top: 1.5vh;
+    left: 5vw;
+    background-image: url("./baskin-robbins-logo-vector.png");
+    background-size: cover;
+    background-position: center;
+}
+#navright{
+    position: relative;
+    width: 20vw;
+    height: 15vh;
+    right: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#button{
+    position: relative;
+    width: 8vw;
+    height: 8vh;
+    background-color: rgb(241, 38, 133);
+    border-radius: 1vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-top: 7px;
+    border: 3px solid rgba(226, 230, 236, 0.989);
+
+}
+
+#page1{
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    top: 15vh;
+    background-image: url("./banner\ 1.jpg");
+    background-size: cover;
+}
+#page2{
+     position: absolute;
+     width: 100%;
+     height: 130vh;
+     top: 100vh;
+     background-color: rgba(255, 255, 255, 0.721);
+}
+#box{
+    position: relative;
+    width: 20vw;
+    height: 35vh;
+    top: 5vh;
+    left: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#box h1{
+    color: rgb(52, 52, 230);
+    font-family: "gilroyebold";
+}
+span{
+    color: rgb(241, 38, 133);
+}
+#boxpic1{
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+    left: 3vw;
+    background-image: url("./Frame_180X80\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#boxpic2{
+    width: 20vw;
+    height: 6vh;
+    background-image: url("./Frame.static.png");
+    background-size: cover;
+}
+#newlaunch{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    top: 10vh;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.new{
+    width: 30vw;
+    height: 90vh;
+    
+}
+#photo1{
+    position: relative;
+    width: 22vw;
+    height: 60vh;
+    /* background-color: white; */
+    top: 8vh;
+    left: 3vw;
+    background-image: url("./vegan\ vanilla.jpg");
+    background-size: cover;
+
+}
+#photo2{
+    position: relative;
+    width: 22vw;
+    height: 70vh;
+    /* background-color: white; */
+    top: 15vh;
+    left: 3vw;
+    background-image: url("./mississippi-mud.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#photo3{
+    position: relative;
+    width: 25vw;
+    height: 80vh;
+    /* background-color: white; */
+    top: 10vh;
+    left: 3vw;
+    background-image: url("./caramel\ kitkat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+#vanilla{
+    position: absolute;
+    top: 68vh;
+    left: 9vw;
+    font-family: "gilroyebold";
+    color: rgb(52, 52, 230);
+
+}
+#one{
+    position: absolute;
+    top: 78vh;
+    left: 10vw;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+    color: rgb(244, 64, 94);
+    font-size: 15px;
+    border: 2px solid rgb(244, 64, 94);
+    text-transform: uppercase;
+    font-family: "gilroyebold";
+}
+#mud{
+    position: absolute;
+    top: 69vh;
+    left: 35vw;
+    font-family: "gilroyebold";
+    color: rgb(52, 52, 230);
+    text-transform: uppercase;
+}
+#two{
+    position: absolute;
+    top: 78vh;
+    left: 38vw;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+     color: rgb(244, 64, 94);
+    font-size: 15px;
+    border: 2px solid rgb(244, 64, 94);
+    text-transform: uppercase;
+    font-family: "gilroyebold";
+    
+}
+#caramel{
+    position: absolute;
+    top: 69vh;
+    left: 68vw;
+    font-family: "gilroyebold";
+    color: rgb(52, 52, 230);
+    text-transform: uppercase;
+}
+#three{
+    position: absolute;
+    top: 78vh;
+    left: 70vw;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+     color: rgb(244, 64, 94);
+    font-size: 15px;
+    border: 2px solid rgb(244, 64, 94);
+    text-transform: uppercase;
+    font-family: "gilroyebold";
+
+}
+#page3{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 240vh;
+
+}
+#fav{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+#favbox1{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(230, 162, 37, 0.826);
+    
+}
+#classic{
+position: absolute;
+top: 11vh;
+left: 3vw;
+font-family: "gilroyebold";
+color: black;
+}
+#fav1{
+    position: absolute;
+    width: 12vw;
+    height: 33vh;
+    top: 20vh;
+    left: 3vw;
+    background-image: url("./classic_vanilla-removebg-preview.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+#b1{
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    bottom: 10vh;
+    left: 4vw;
+    background-color: rgb(242, 38, 72);
+    border: none;
+    border-radius: 20px 0;
+    color: white;
+    font-family: "gilroyebold";
+    text-transform: uppercase;
+}
+#favbox2{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(49, 1, 1);
+    
+}
+#candy{
+    position: relative;
+    top: 6vh;
+    left: 5vw;
+    font-family: "gilroyebold";
+    color: white;
+    }
+    #fav2{
+        position: relative;
+        width: 15vw;
+        height: 30vh;
+        top: 13vh;
+        left: 4vw;
+        background-image: url("./page3_cotton_candy-removebg-preview.png");
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    #b2{
+        position: relative;
+        width: 10vw;
+        height: 3vw;
+        top: 13vh;
+        left: 6vw;
+        background-color: rgb(242, 38, 72);
+        border: none;
+        border-radius: 20px 0;
+        color: white;
+        font-family: "gilroyebold";
+        text-transform: uppercase;
+    }
+#favbox3{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(249, 181, 116, 0.68);
+    
+}
+#g-ribbon{
+    position: relative;
+    top: 6vh;
+    left: 3vw;
+    font-family: "gilroyebold";
+    color: black;
+    }
+    #fav3{
+        position: relative;
+        width: 18vw;
+        height: 35vh;
+        top: 13vh;
+        left: 2vw;
+        background-image: url("./gold_medal_ribbon-removebg-preview.png");
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    #b3{
+        position: relative;
+        width: 10vw;
+        height: 3vw;
+        top: 8vh;
+        left: 6vw;
+        background-color: rgb(242, 38, 72);
+        border: none;
+        border-radius: 20px 0;
+        color: white;
+        font-family: "gilroyebold";
+        text-transform: uppercase;
+    }
+#favbox4{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(133, 1, 1, 0.991);
+    
+}
+#mud2{
+    position: relative;
+    top: 6vh;
+    left: 5vw;
+    font-family: "gilroyebold";
+    color: white;
+    }
+    #fav4{
+        position: relative;
+        width: 15vw;
+        height: 33vh;
+        top: 8vh;
+        left: 5vw;
+        background-image: url("./page3_mud-removebg-preview.png");
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    #b4{
+        position: relative;
+        width: 10vw;
+        height: 3vw;
+        top: 9vh;
+        left: 7vw;
+        background-color: rgb(242, 38, 72);
+        border: none;
+        border-radius: 20px 0;
+        color: white;
+        font-family: "gilroyebold";
+        text-transform: uppercase;
+    }
+#box2{
+    position: relative;
+    width: 28vw;
+    height: 30vh;
+    left: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#box2pic1{
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+    left: 2vw;
+    background-image: url("./page3logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2pic2{
+    width: 20vw;
+    height: 6vh;
+    background-image: url("./Frame.static.png");
+    background-size: cover;
+}
+#box2 h3{
+    color: rgb(52, 52, 230);
+    font-size: 30px;
+    font-family: "gilroyebold";
+}
+#page4{
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    top: 340vh;
+    /* filter: blur(5px); */
+}
+#page4box{
+    position: relative;
+    width: 20vw;
+    height: 33vh;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+#page4box h1{
+    color: rgb(52, 52, 230);
+    font-family: "gilroyebold";
+}
+span{
+    color: rgb(241, 38, 133);
+}
+#p4logo{
+    position: relative;
+    width: 15vw;
+    height: 15vh;
+    left: 4vw;
+    background-image: url("./page4\ logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#p4logo2{
+    width: 20vw;
+    height: 6vh;
+    background-image: url("./Frame.static.png");
+    background-size: cover;
+    filter: brightness(20px);
+}
+#p4content{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-color: aqua;
+    top: 2vh;
+
+}
+
